@@ -138,45 +138,80 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login - WebStart Fashion</title>
+    <link rel="stylesheet" href="../css/admin-login.css">
 </head>
 
 <body>
+<body>
 
-    <h1>WebStart Fashion</h1>
-    <h2>Connexion Admin</h2>
+    <main class="login-page">
 
-    <?php if ($error): ?>
-        <p style="color:red;">
-            <?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?>
-        </p>
-    <?php endif; ?>
+        <div class="login-card">
 
-    <form method="POST">
+            <a href="../index.html" class="brand">
+                WebStart <span>Fashion</span>
+            </a>
 
-        <input
-            type="hidden"
-            name="csrf_token"
-            value="<?= htmlspecialchars($_SESSION['login_csrf'], ENT_QUOTES, 'UTF-8') ?>">
+            <div class="login-icon">🔐</div>
 
-        <input
-            type="text"
-            name="username"
-            placeholder="Username"
-            required>
+            <h1>Bienvenue</h1>
+            <p class="login-subtitle">Connectez-vous à votre espace administrateur</p>
 
-        <br><br>
+            <?php if ($error): ?>
+                <div class="login-error" role="alert">
+                    <?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?>
+                </div>
+            <?php endif; ?>
 
-        <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required>
+            <form method="POST">
 
-        <br><br>
+                <input
+                    type="hidden"
+                    name="csrf_token"
+                    value="<?= htmlspecialchars($_SESSION['login_csrf'], ENT_QUOTES, 'UTF-8') ?>">
 
-        <button type="submit">Se connecter</button>
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Entrez votre username"
+                        autocomplete="username"
+                        required>
+                </div>
 
-    </form>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Entrez votre mot de passe"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <button type="submit" class="login-button">
+                    Se connecter
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <a href="../index.html" class="back-link">
+                ← Retour à la boutique
+            </a>
+
+            <div class="login-footer">
+                &copy; <?= date('Y') ?> WebStart Fashion
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
 
 </body>
 
