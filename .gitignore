@@ -1,0 +1,22 @@
+
+# Database credentials
+/config/database.php
+
+# Database backups
+*.sql
+*.sql.zip
+
+# Environment variables
+.env
+.env.*
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

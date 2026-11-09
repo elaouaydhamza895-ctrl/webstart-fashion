@@ -1,0 +1,5 @@
+Options -Indexes
+
+<FilesMatch "^(\.env|\.git|composer\.(json|lock)|package(-lock)?\.json)$">
+    Require all denied
+</FilesMatch>
