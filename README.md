@@ -57,6 +57,18 @@
 
 Ce projet a été réalisé dans le cadre de mon apprentissage en développement Web Full Stack afin de mettre en pratique HTML, CSS, JavaScript, PHP et MySQL.
 
+## Captures d'écran
+
+### Page d'accueil
+![Page d'accueil](screenshots/home.png)
+
+### Catalogue des produits
+![Produits](screenshots/products.png)
+
+### Tableau de bord administrateur
+![Dashboard](screenshots/admin.png)
+
+
 ## Statut
 
 Projet de démonstration et d'apprentissage — non destiné à être utilisé directement en production sans audit et configuration supplémentaires.
