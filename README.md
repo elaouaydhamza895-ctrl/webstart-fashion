@@ -63,7 +63,7 @@ Ce projet a été réalisé dans le cadre de mon apprentissage en développement
 ![Page d'accueil](screenshots/home.png)
 
 ### Catalogue des produits
-![Produits](screenshots/products.png)
+![Produits](screenshots/product.png)
 
 ### Tableau de bord administrateur
 ![Dashboard](screenshots/admin.png)
